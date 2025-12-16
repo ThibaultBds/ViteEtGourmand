@@ -15,6 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -36,6 +37,13 @@ ul li {
     list-style: none;
 }
 
+ul li:hover {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(124, 196, 166);
+    padding: 7px;
+    cursor: pointer;
+}
 .hero-container {
   position: relative;
   width: 100%;
