@@ -27,6 +27,7 @@ h2 {
 } 
 
 nav ul {
+  position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -42,7 +43,17 @@ ul li:hover {
     border-radius: 20px;
     background-color: rgb(124, 196, 166);
     padding: 7px;
-    cursor: pointer;
+    cursor: pointer;  
+}
+
+nav a {
+    text-decoration: none;}
+
+.index-css {
+  border: none;
+  border-radius: 10px;
+  background-color: lightgreen;
+  padding: 13px;
 }
 .hero-container {
   position: relative;
@@ -149,6 +160,19 @@ ul li:hover {
     margin-bottom: 30px;
     line-height: 1.6;    
 }*/
+
+.hero-menu {
+  height: 360px;
+  background-image: url("../img/plat1.jpg"), url("../img/plat2.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
 
 footer {
     text-align: center;
