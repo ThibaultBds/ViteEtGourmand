@@ -8,6 +8,7 @@ body {
     background-color: white;
     color: #333;
     overflow-x: hidden;
+    
 }
 
 header {
@@ -27,45 +28,56 @@ h2 {
 } 
 
 nav ul {
-  position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 12px 0;
+  justify-content: center;
+  max-width: 900px;
 }
 
 ul li {
-    list-style: none;
-}
-
-ul li:hover {
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: rgb(124, 196, 166);
-    padding: 7px;
-    cursor: pointer;  
+  list-style: none;
+  
 }
 
 nav a {
-    text-decoration: none;}
+  display: block;
+  padding: 16px 22px;
+  border-radius: 12px;
+  background-color: lightgreen;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+}
 
-.index-css {
+nav a:hover {
+  background: rgb(124, 196, 166);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(124,196,166,0.15);
+}
+
+.index-css,
+.menu-css,
+.connexion-css,
+.contact-css {
   border: none;
   border-radius: 10px;
-  background-color: lightgreen;
-  padding: 13px;
 }
+
 .hero-container {
   position: relative;
   width: 100%;
-  min-height: 360px;
+  min-height: 660px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.03)),
-    url("../img/hero2.jpg");
+    url("../img/plat1.jpg");
   background-size: cover;
   background-position: 30% 80%;
   background-repeat: no-repeat;
@@ -76,7 +88,6 @@ nav a {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .hero-content p {
@@ -84,82 +95,12 @@ nav a {
   flex-wrap: wrap;
 }
 
+
 .hero-content h1,
 .hero-content p {
   color: #fff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
-
-/*.hero-container {
-    background-image: url('../img/hero.jpg');
-    background-size: cover;
-    background-position: center center;
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}*/
-
-/*.hero-content {
-    color: white;
-    z-index: 2;
-    top: 30%;
-    left: 30%;
-    transform: translate(-30%, -30%);
-} */
-
-.presentation-entreprise {
-  position: relative;
-  width: 100%;
-  min-height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.03)),
-    url("../img/presentation.jpg");
-  background-size: cover;
-  background-position: 30% 80%;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-
-.presentation-entreprise h2{
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.speech p {
-    font-style: italic;
-    flex-wrap: wrap;
-    font-size: 15px;
-}
-
-.presentation-entreprise h2,
-.speech p {
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
-}
-
-/*.presentation-entreprise h2 {
-   border: 1px solid black;
-   border-radius: 30px;
-   box-shadow: 3px 3px 3px black;
-   margin-bottom: 15px;
-   width: fit-content;
-   padding: 10px;
-}
-
-.presentation-entreprise p {
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.6;    
-}*/
 
 .hero-menu {
   height: 360px;
@@ -172,6 +113,46 @@ nav a {
   justify-content: center;
   text-align: center;
   color: #fff;
+}
+
+.filtred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  border: 1px solid black; 
+  border-radius: 10px;
+  width: fit-content;
+  padding: 4px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 2px 2px black;
+}
+
+.filtred-champs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label-filtre {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.3em 0.8em;
+  background: rgba(255,255,255,0.7); /* optionnel pour la lisibilité */
+  margin-right: 10px;
+}
+
+input,
+textarea,
+select {
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  padding: 0.4em 0.8em;
+  
 }
 
 footer {
