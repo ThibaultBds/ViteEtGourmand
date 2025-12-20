@@ -1,52 +1,145 @@
 <!DOCTYPE html>
 <html>
-    <meta charset ="UTF-8">
-    <head>
-        <title>Menus - Vite&Gourmand</title>
-        <link href="../assets/css/style.css" rel="stylesheet" >
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>ViteEtGourmand</h1>
-            <nav>
-                <ul>
-                    <li class="index-css">
-                        <a href="index.html">Retour vers la page d'accueil</a>
-                    </li>
-                    <li class="menu-css">
-                        <a href="menus.html"  >Accès à tous les menus</a>
-                    </li>
-                    <li class="connexion-css">
-                        <a href="connexion.html">Connexion staff</a>
-                    </li>
-                    <li class="contact-css">
-                        <a href="contact.html">Page de contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Menus - Vite&Gourmand</title>
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><span class="fast-v">V</span>iteEtGourmand</h1>
+      <nav>
+        <ul>
+          <li class="index-css nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-text">Retour vers la page d'accueil</span>
+              <i class="fa-solid fa-house nav-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="menu-css nav-item">
+            <a href="menus.html" class="nav-link">
+              <span class="nav-text">Accès à tous les menus</span>
+              <i class="fa-solid fa-utensils nav-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="connexion-css nav-item">
+            <a href="connexion.html" class="nav-link">
+              <span class="nav-text">Connexion staff</span>
+              <i class="fa-solid fa-user-lock nav-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="contact-css nav-item">
+            <a href="contact.html" class="nav-link">
+              <span class="nav-text">Page de contact</span>
+              <i class="fa-solid fa-envelope nav-icon" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section class="hero-menu">
-            <div class="hero-menu-content">
-                <h2>Nos menus, adaptés à tous les goûts</h2>
-                <p>Dégustez tout ce que vous aimez, le choix vous l'avez!</p>
-            </div>
-        </section>
+    <section class="hero-containerx">
+      <div class="hero-contentx">
+        <h2>Nos menus, adaptés à tous les goûts</h2>
+        <p>Dégustez tout ce que vous aimez, le choix vous l'avez!</p>
+      </div>
+    </section>
 
-        <section class="filtred">
-            <div class="filtred-champs">
-                <label for="regime">Régime:</label>
-                <select name="regime-filtred" id="regime">
-                    <option value>Végétarien</option>
-                    <option value>Vegan</option>
-                    <option value>Flexitarien</option>
-                    <option value>Sans Gluten</option>
-                    <option value>Classique</option>
-                </select>
-                <label for="fourchette">Fourchette de prix</label>
-                <input type="number" name="fourchette" id="fourchette" min="5" max="150">
-            </div>
-        </section>
-    </body>
+    <section class="filtred">
+      <div class="filtred-champs">
+        <label for="regime">Régime:</label>
+        <select name="regime-filtred" id="regime">
+          <option value>Végétarien</option>
+          <option value>Vegan</option>
+          <option value>Flexitarien</option>
+          <option value>Sans Gluten</option>
+          <option value>Classique</option>
+        </select>
+        <label for="fourchette">Fourchette de prix</label>
+        <input
+          type="number"
+          name="fourchette"
+          id="fourchette"
+          min="5"
+          max="150"
+        />
+        <label for="prsn_min">Nombre de personnes</label>
+        <input
+          type="text"
+          id="prsn_min"
+          name="prsn_min"
+          min="1"
+          max="20"
+          value="1"
+        />
+        <label for="theme">Thème</label>
+        <select name="theme" id="theme">
+          <option value>Classique</option>
+          <option value>Saint-Valentin</option>
+          <option value>Pâques</option>
+          <option value>Thanksgiving</option>
+          <option value>Halloween</option>
+          <option value>Noël</option>
+          <option value>Anniversaire</option>
+        </select>
+        <label for="prix_max">Prix maximum :</label>
+        <input
+          type="text"
+          id="prix_max"
+          name="prix_max"
+          min="1"
+          max="200"
+          value="1"
+        />
+      </div>
+    </section>
+    <section class="menu-section">
+      <h2>Nos menus</h2>
+    </section>
+    
+    <section class="main-menu">
+      <div class="menu-cards">
+        <h3>Titre du menu</h3>
+      <p>Description du menu</p>
+      <ul>
+        <li>Entrée</li>
+        <li>Plat</li>
+        <li>Dessert</li>
+        <li>Boissons</li>
+      </ul>
+        <p>Nb de personnes minimales<br>
+          + Prix
+      </p>
+        <button>Détails</button>
+      </div>
+      <div class="menu-cards">
+        <h3>Menu 1</h3>
+        <p>Description du menu 1</p>
+        <p>Nb de personnes + prix</p>
+        <button>Détails</button>
+      </div>
+      <div class="menu-cards">
+        <h3>Menu 1</h3>
+        <p>Description du menu 1</p>
+        <p>Nb de personnes + prix</p>
+        <button>Détails</button>
+      </div>
+      <div class="menu-cards">
+        <h3>Menu 1</h3>
+        <p>Description du menu 1</p>
+        <p>Nb de personnes + prix</p>
+        <button>Détails</button>
+      </div>
+      <div class="menu-cards">
+        <h3>Menu 1</h3>
+        <p>Description du menu 1</p>
+        <p>Nb de personnes + prix</p>
+        <button>Détails</button>
+      </div>
+
+  </body>
 </html>
