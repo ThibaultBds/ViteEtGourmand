@@ -314,7 +314,6 @@ footer {
   text-align: center;
   background-color: rgb(134, 61, 61);
   color: white;
-  margin-top: 500px;
   padding-top: 20px;
   line-height: 1.8;
   padding-bottom: 20px;
@@ -352,6 +351,18 @@ footer {
   line-height: 1.5; /
 }
 
+main.contenu-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section.presentation-entreprise,
+section.mise-en-avant,
+section.avis {
+  margin-top: 60px;
+}
+
 .mise-en-avant {
   max-width: 1200px;
   margin: 0 auto;
@@ -372,8 +383,11 @@ footer {
 }
 
 .portrait-texte {
-  flex: 1;
   margin-top: 15px;
+  max-width: 520px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .portrait-texte h3 {
@@ -399,6 +413,14 @@ footer {
   margin: 10px;
 }
 
+.jose-img,
+.julie-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
 .texte-presentation {
   margin-left: 10px;
   line-height: 1.6;
@@ -410,38 +432,36 @@ footer {
   margin-bottom: 20px;
 }
 
-.title-avis {
-  text-align: center;
+.avis {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px 30px;
 }
 
-.avis {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px;
+.title-avis h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .avis-card {
+  margin-bottom: 15px;
+}
+
+.avis-auteur {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.fa-solid.fa-circle-user {
-  color: orange;
-  font-size: 20px;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .name-card {
-  color: black;
-  font-size: 18px;
   margin: 0;
+  font-weight: 600;
 }
 
-.fa-solid,
-.name-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.avis-card p {
+  margin: 0;
+  line-height: 1.5;
 }
